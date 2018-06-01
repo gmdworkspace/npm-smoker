@@ -1,0 +1,16 @@
+{
+  "apis": [
+    {
+      "name": "Google",
+      "url": "https://google.com",
+      "method": "get",
+      "successCode": 200
+    },
+    {
+      "name": "Facebook",
+      "url": "https://facebook.com",
+      "method": "get",
+      "successCode": 200
+    }
+  ]
+}

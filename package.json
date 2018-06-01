@@ -1,0 +1,41 @@
+{
+  "name": "npm-smoker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js --color --progress",
+    "start-build": "node dist/bundle.js",
+    "start": "npm-run-all build start-build",
+    "test": "mocha --compilers js:babel-core/register './test/**/*.spec.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gmdworkspace@github.com/gmdworkspace/npm-smoker.git"
+  },
+  "keywords": [
+    "smoke",
+    "test",
+    "API testing"
+  ],
+  "author": "Dinesh G M",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gmdworkspace/npm-smoker/issues"
+  },
+  "homepage": "https://github.com/gmdworkspace/npm-smoker#readme",
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.3",
+    "babel-loader": "^7.1.4",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "npm-run-all": "^4.1.3"
+  }
+}
