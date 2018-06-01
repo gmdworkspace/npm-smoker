@@ -4,9 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config webpack.config.js --color --progress",
-    "start-build": "node dist/bundle.js",
-    "start": "npm-run-all build start-build",
     "test": "mocha --compilers js:babel-core/register './test/**/*.spec.js'"
   },
   "repository": {
